@@ -18,7 +18,7 @@ jobs:
               run:  dotnet restore
 
             - name: build app
-              run:  dotnet build --not-restore
+              run:  dotnet build --no-restore
 
               
     connvert_pdf:
