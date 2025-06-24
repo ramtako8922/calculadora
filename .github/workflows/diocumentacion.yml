@@ -19,8 +19,8 @@ jobs:
             
             - name: build app
               run:  dotnet build --no-restore
-            - name: hello world by ricardo
-              uses: ramtako8922/create-action@v1.0.3
+            - name: Hello World Action by Luis Beltrán
+              uses: icebeam7/hello-world-javascript-action@v1.0
               with:
                  who-to-greet: 'Diego'
 
