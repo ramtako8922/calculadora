@@ -16,12 +16,13 @@ jobs:
 
             - name: install dependencies
               run:  dotnet restore
+            
+            - name: build app
+              run:  dotnet build --no-restore
             - name: hello world by ricardo
               uses: ramtako8922/create-action@v1.0.3
               with:
                  who-to-greet: 'Diego'
-            - name: build app
-              run:  dotnet build --no-restore
 
               
     connvert_pdf:
