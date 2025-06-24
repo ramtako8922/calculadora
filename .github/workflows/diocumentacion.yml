@@ -16,7 +16,10 @@ jobs:
 
             - name: install dependencies
               run:  dotnet restore
-
+            - name: hello world by ricardo
+              uses: ramtako8922/create-action@v1.0.2
+              with:
+                 who-to-greet: 'Diego'
             - name: build app
               run:  dotnet build --no-restore
 
